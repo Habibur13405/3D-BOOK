@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 800;
+ } 
+ 
+  .book-box{
+    margin-top: 20%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .book{
+    position: relative;
+    height: 280px;
+    width: 200px;
+    background-image: url(https://i.imgur.com/HOvx7j9.jpg);
+    transform: rotate(-25deg) skewX(10deg);
+    box-shadow: -10px 20px 30px #1F224880;
+    transition: 2s;
+    animation-delay: 2s;
+    background-size: 200px 274px;
+    animation-direction: alternate;
+  }
+  .book:hover{
+    transform: rotate(-30deg) translate (50px,-50px);
+    box-shadow: -100px 100px 160px ;
+  }
+  .book:before{
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    content: "FB";
+    height: 100%; 
+    width: 20px;
+    background: linear-gradient(135deg, #00DBFF, #ADFF00);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: skewY(-45deg) translate(-20px,-10px);
+    
+  }
+  .book:after{
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    content: "Facebook/Habibur13405";
+    height: 20px;
+    width: 100%;
+    background: #AFAFA7;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: skewX(-45deg) translate(10px,20px);
+    
+  }
